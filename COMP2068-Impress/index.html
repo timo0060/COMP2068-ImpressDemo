@@ -5,12 +5,39 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- CSS Styles -->
+    <link href="css/reset.css" rel="stylesheet" />
     <link href="css/game.css" rel="stylesheet" />
 </head>
-<body>
+<body onload="main()">
+    <!--All slides go in here-->
+    <div id="impress">
+        <!--Slide #1-->
+        <div id="1" class="step slide">
+            <div class="slide-text">
+                <p>There's a time machine over there! Flip Dat SWITCH!</p>
+                <p><a href="#2">FLIP IT</a></p>
+                <p><a href="#3">WAIT</a></p>
+            </div>
+        </div>
+        <!--Slide #2-->
+        <div id="2" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You saw the dinosaurs!!! Awesome BRO</p>
+            </div>
+            <div class="menu"><a href="#1">Menu</a></div>
+        </div>
+        <!--Slide #3-->
+        <div id="3" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p>Your dad came home and didn't let you touch the switch... LAME! You're very borded.</p>
+            </div>
+            <div class="menu"><a href="#1">Menu</a></div>
+        </div>
 
+    </div>
 
     <!-- Javascript Here -->
+    <script src="Scripts/lib/impress.js"></script>
     <script src="Scripts/game.js"></script>
 </body>
 </html>
